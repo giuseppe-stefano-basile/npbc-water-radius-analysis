@@ -1,0 +1,65 @@
+{
+  "rdf_pair": "OO",
+  "reference_layer_coordinate": "reference-water molecular COM distance from spherical wall",
+  "pair_distance_coordinate": "oxygen-oxygen distance",
+  "npbc_edge_correction": "exact intersection volume of each O-centered pair-distance shell with the spherical cavity",
+  "finite_N_density": "(N_O-1)/V for distinct O-O pairs",
+  "rdf_bin_width_A": 0.05,
+  "rdf_rmax_A": 8.0,
+  "coarse_wall_layers_A": [
+    "0-2",
+    "2-4",
+    "4-6",
+    "6-8",
+    ">=8"
+  ],
+  "fine_wall_layers_A": [
+    "0-1",
+    "1-2",
+    "2-3",
+    "3-4",
+    "4-5",
+    "5-6",
+    "6-7",
+    "7-8",
+    "8-9",
+    "9-10",
+    "10-11",
+    "11-12",
+    ">=12"
+  ],
+  "sampling_interval_ps": 5.0,
+  "block_length_ps": 100.0,
+  "time_intervals": {
+    "R15": "[100,1100) ps",
+    "R20": "[0,1000) ps",
+    "R30": "[100,1100) ps",
+    "PBC40": "[200,1000) ps"
+  },
+  "frames": {
+    "R15": 200,
+    "R20": 200,
+    "R30": 200,
+    "PBC40": 160
+  },
+  "outside_oxygen_reference_samples": {
+    "R15": 291,
+    "R20": 462,
+    "R30": 1033
+  },
+  "intrinsic_distribution_properties": [
+    "tetra_q",
+    "coord_OO_3p5",
+    "hb_donor",
+    "hb_accept",
+    "hb_total",
+    "OH_mean_A",
+    "HOH_deg",
+    "d1_OO_A",
+    "d2_OO_A",
+    "d3_OO_A",
+    "d4_OO_A",
+    "d5_OO_A"
+  ],
+  "orientation_note": "radial orientation observables are excluded because no physical radial axis exists in translationally invariant PBC bulk"
+}

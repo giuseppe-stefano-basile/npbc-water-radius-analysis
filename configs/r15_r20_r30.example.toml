@@ -1,0 +1,70 @@
+# Copy this file to configs/r15_r20_r30.local.toml and replace every /path/to entry.
+# The protocol values are intentionally explicit and are validated before execution.
+
+[analysis]
+output_dir = "../results/r15_r20_r30"
+work_dir = "../work/r15_r20_r30"
+python_executable = "python3"
+experimental_goo = "/path/to/Ambient_water_xray_data.txt"
+
+[[systems]]
+label = "R15"
+boundary = "NPBC"
+radius_A = 15.0
+waters = 526
+trajectories = ["/path/to/traj_water_npbc_R15_flat_frozen159_val1ns.dump"]
+step_offsets = [0]
+whole_interval_steps = [100000, 1100000]
+whole_expected_frames = 201
+rdf_interval_steps = [100000, 1100000]
+rdf_expected_frames = 41
+radial_interval_steps = [100000, 1100000]
+radial_expected_frames = 200
+bias_file = "/path/to/gau_flat_edge_global159_snapshot.dat"
+layer_file = "/path/to/vdw_parameter_step25000_flat_edge_m13.dat"
+
+[[systems]]
+label = "R20"
+boundary = "NPBC"
+radius_A = 20.0
+waters = 1248
+trajectories = ["/path/to/traj_water_npbc_R20_flat_frozen_validation.dump"]
+step_offsets = [0]
+whole_interval_steps = [0, 1000000]
+whole_expected_frames = 201
+rdf_interval_steps = [0, 1000000]
+rdf_expected_frames = 41
+radial_interval_steps = [0, 1000000]
+radial_expected_frames = 200
+bias_file = "/path/to/gau_R20_commonpolish_work.dat"
+layer_file = "/path/to/vdw_parameter_step25000_flat_edge_m13.dat"
+
+[[systems]]
+label = "R30"
+boundary = "NPBC"
+radius_A = 30.0
+waters = 4211
+trajectories = [
+  "/path/to/traj_water_npbc_R30_flat_frozen188_val_p1.dump",
+  "/path/to/traj_water_npbc_R30_flat_frozen188_val_p2.dump",
+]
+step_offsets = [0, 550000]
+whole_interval_steps = [100000, 1100000]
+whole_expected_frames = 201
+rdf_interval_steps = [100000, 1100000]
+rdf_expected_frames = 41
+radial_interval_steps = [100000, 1100000]
+radial_expected_frames = 200
+bias_file = "/path/to/gau_flat_edge_global188_snapshot.dat"
+layer_file = "/path/to/vdw_parameter_step25000_flat_edge_m13.dat"
+
+[[systems]]
+label = "PBC40"
+boundary = "PBC"
+waters = 2383
+trajectories = ["/path/to/traj_water_pbc40_stationary.dump"]
+step_offsets = [0]
+rdf_interval_steps = [200000, 1000000]
+rdf_expected_frames = 33
+radial_interval_steps = [200000, 1000000]
+radial_expected_frames = 160

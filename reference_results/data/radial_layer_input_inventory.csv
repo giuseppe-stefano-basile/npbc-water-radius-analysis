@@ -1,0 +1,6 @@
+system,boundary_condition,trajectory,trajectory_sha256,selected_frames_total,sampling_interval_ps,half_open_interval_ps
+R15,NPBC,traj_water_npbc_R15_flat_frozen159_val1ns.dump,267599debcafc3832bac1521bd7d878c2e21ec62acb5438d4add3a72c6d755b0,200,5.0,"[100,1100)"
+R20,NPBC,traj_water_npbc_R20_flat_frozen_validation.dump,a170d52c47883fa344ac2236f696c3730eacdec06278530bbd88d9e64ba8a681,200,5.0,"[0,1000)"
+R30,NPBC,traj_water_npbc_R30_flat_frozen188_val_p1.dump,20378a0799549f422e4192ae59ff7d754c7a3935da2884538ebf4bbd91b34dac,200,5.0,"[100,1100)"
+R30,NPBC,traj_water_npbc_R30_flat_frozen188_val_p2.dump,ee0609c7942196f014fa564f02058c3c475fa4dd2430718fb67e7db9726080bd,200,5.0,"[100,1100)"
+PBC40,PBC,traj_pbc40_prod_stationary_200_1000ps.dump,da76e02b40cc5ffc4421b77b01ddb0590d44529099d438826a5a2279decd8f7a,160,5.0,"[200,1000)"

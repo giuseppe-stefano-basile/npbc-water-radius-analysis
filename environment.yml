@@ -1,0 +1,14 @@
+name: npbc-water-analysis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - matplotlib>=3.8
+  - numpy>=1.26
+  - pandas>=2.1
+  - scipy>=1.11
+  - seaborn>=0.13
+  - pytest>=8
+  - pip
+  - pip:
+      - -e .

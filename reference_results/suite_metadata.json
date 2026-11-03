@@ -1,0 +1,74 @@
+{
+  "stochkin_repository": "https://github.com/giuseppe-stefano-basile/stochkin",
+  "stochkin_commit": "3c99adb84f7fe5efd2a2b5e4b8ec6c094db8d067",
+  "style_source": "stochkin/style.py",
+  "temporal_band": "mean +/- first temporal standard deviation of per-frame shell means",
+  "frame_interval_ps": 5,
+  "production_length_ps": 1000,
+  "frames_per_radius": 201,
+  "shell_width_A": 0.25,
+  "figure_pairs": 28,
+  "rdf_extension": {
+    "bin_width_A": 0.05,
+    "rmax_A": 8.0,
+    "sampling_interval_ps": 25,
+    "uncertainty_band": "first temporal standard deviation across 100 ps block RDF estimates",
+    "pbc_reference": "40 A cubic MACE-OFF23 small_2, 2383 waters, stationary 200-1000 ps",
+    "pbc_number_density_molecule_A3": 0.037234375,
+    "npbc_target_number_density_molecule_A3": 0.037242,
+    "intermolecular_rule": "exclude atom pairs sharing the same molecule id"
+  },
+  "potential_definition": "0.0005 eV * sum_k[(gau[k]-gau[0]) exp(-0.5((r-center[k])/sigma[k])^2)]",
+  "output_formats": [
+    "PNG 300 dpi",
+    "vector PDF"
+  ],
+  "experimental_gOO_full_curve": {
+    "source": "Skinner et al., J. Chem. Phys. 138, 074506 (2013)",
+    "doi": "10.1063/1.4790861",
+    "temperature_C": 22.0,
+    "raw_points": 2000,
+    "raw_r_range_A": [
+      0.0,
+      19.99
+    ],
+    "overlay_r_range_A": [
+      1.1,
+      7.975
+    ],
+    "pointwise_error_band": "author-supplied estimated error"
+  },
+  "radial_layer_analysis": {
+    "reference_coordinate": "reference-water molecular COM distance from spherical wall",
+    "rdf_pair_coordinate": "oxygen-oxygen separation",
+    "rdf_bin_width_A": 0.05,
+    "rdf_rmax_A": 8.0,
+    "fine_wall_layer_width_A": 1.0,
+    "histogram_wall_layer_width_A": 2.0,
+    "npbc_edge_correction": "analytic accessible shell volume inside spherical cavity",
+    "finite_N_density": "(N_O-1)/V",
+    "block_length_ps": 100,
+    "uncertainty_band": "first temporal standard deviation across equal half-open 100 ps blocks",
+    "selected_frames": {
+      "R15": 200,
+      "R20": 200,
+      "R30": 200,
+      "PBC40": 160
+    },
+    "intrinsic_properties": [
+      "tetra_q",
+      "coord_OO_3p5",
+      "hb_donor",
+      "hb_accept",
+      "hb_total",
+      "OH_mean_A",
+      "HOH_deg",
+      "d1_OO_A",
+      "d2_OO_A",
+      "d3_OO_A",
+      "d4_OO_A",
+      "d5_OO_A"
+    ],
+    "orientation_exclusion": "PBC has no physical radial axis"
+  }
+}

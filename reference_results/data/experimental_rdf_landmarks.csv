@@ -1,0 +1,9 @@
+pair,feature,r_A,g_r,r_uncertainty_A,g_uncertainty,experimental_source,experimental_source_doi,state,table_source,table_source_doi
+OO,first_max,2.8,2.57,0.01,0.05,"Skinner et al., J. Chem. Phys. 138, 074506 (2013)",10.1063/1.4790861,ambient liquid water,"Zheng et al., J. Chem. Phys. 148, 164505 (2018), Tables I-III",10.1063/1.5023611
+OO,first_min,3.45,0.84,,,"Skinner et al., J. Chem. Phys. 138, 074506 (2013)",10.1063/1.4790861,ambient liquid water,"Zheng et al., J. Chem. Phys. 148, 164505 (2018), Tables I-III",10.1063/1.5023611
+OO,second_max,4.5,1.12,,,"Skinner et al., J. Chem. Phys. 138, 074506 (2013)",10.1063/1.4790861,ambient liquid water,"Zheng et al., J. Chem. Phys. 148, 164505 (2018), Tables I-III",10.1063/1.5023611
+OH,hbond_max,1.73,1.01,,,Soper/Benmore joint X-ray-neutron EPSR benchmark,10.1103/PhysRevLett.101.065502,ambient liquid water,"Zheng et al., J. Chem. Phys. 148, 164505 (2018), Tables I-III",10.1063/1.5023611
+OH,first_min,2.39,0.28,,,Soper/Benmore joint X-ray-neutron EPSR benchmark,10.1103/PhysRevLett.101.065502,ambient liquid water,"Zheng et al., J. Chem. Phys. 148, 164505 (2018), Tables I-III",10.1063/1.5023611
+OH,second_max,3.3,1.41,,,Soper/Benmore joint X-ray-neutron EPSR benchmark,10.1103/PhysRevLett.101.065502,ambient liquid water,"Zheng et al., J. Chem. Phys. 148, 164505 (2018), Tables I-III",10.1063/1.5023611
+HH,inter_max,2.38,1.29,,,Soper/Benmore joint X-ray-neutron EPSR benchmark,10.1103/PhysRevLett.101.065502,ambient liquid water,"Zheng et al., J. Chem. Phys. 148, 164505 (2018), Tables I-III",10.1063/1.5023611
+HH,first_min,2.98,0.82,,,Soper/Benmore joint X-ray-neutron EPSR benchmark,10.1103/PhysRevLett.101.065502,ambient liquid water,"Zheng et al., J. Chem. Phys. 148, 164505 (2018), Tables I-III",10.1063/1.5023611

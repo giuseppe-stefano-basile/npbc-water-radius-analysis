@@ -45,10 +45,6 @@ specific scientific records.  The final processed tables, figures, bias
 profiles, experimental O--O table, metadata, and checks are included.  A local
 configuration points the workflow to the raw dump files without copying them.
 
-For a checksum-verified, resumable download of the five validated dumps from
-Leonardo, follow
-[`docs/07_leonardo_trajectory_download.md`](docs/07_leonardo_trajectory_download.md).
-
 ## Installation
 
 Using `venv`:

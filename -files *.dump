@@ -1,0 +1,153 @@
+ .gitignore                                                                 |    20 [32m+[m
+ CHANGELOG.md                                                               |    13 [32m+[m
+ CITATION.cff                                                               |    10 [32m+[m
+ CONTRIBUTING.md                                                            |    17 [32m+[m
+ LICENSE                                                                    |    21 [32m+[m
+ MANIFEST.sha256                                                            |   151 [32m+[m
+ Makefile                                                                   |    17 [32m+[m
+ README.md                                                                  |     4 [31m-[m
+ THIRD_PARTY_NOTICES.md                                                     |    11 [32m+[m
+ analysis_scripts/README.md                                                 |    21 [32m+[m
+ analysis_scripts/analyze_radius_equivalence.py                             |   929 [32m+[m
+ analysis_scripts/compute_radial_layer_analysis.py                          |   728 [32m+[m
+ analysis_scripts/compute_rdf_extensions.py                                 |   399 [32m+[m
+ analysis_scripts/make_stochkin_figure_suite.py                             |  1459 [32m++[m
+ configs/r15_r20_r30.example.toml                                           |    70 [32m+[m
+ docs/00_learning_path.md                                                   |    60 [32m+[m
+ docs/01_data_model.md                                                      |    59 [32m+[m
+ docs/02_estimators.md                                                      |    73 [32m+[m
+ docs/03_statistics.md                                                      |    50 [32m+[m
+ docs/04_reproducibility.md                                                 |    51 [32m+[m
+ docs/05_student_project.md                                                 |    44 [32m+[m
+ docs/06_output_catalog.md                                                  |    58 [32m+[m
+ environment.yml                                                            |    14 [32m+[m
+ examples/inspect_reference.py                                              |    19 [32m+[m
+ examples/make_toy_dump.py                                                  |    50 [32m+[m
+ paper/SI_R15_R20_R30_analysis_methods.pdf                                  |   Bin [31m0[m -> [32m1347636[m bytes
+ paper/SI_R15_R20_R30_analysis_methods.tex                                  |  1138 [32m+[m
+ pyproject.toml                                                             |    39 [32m+[m
+ reference_results/RADIAL_LAYER_RDF_AND_DISTRIBUTION_ASSESSMENT.md          |   130 [32m+[m
+ reference_results/RDF_LITERATURE_AND_PBC_ASSESSMENT.md                     |   116 [32m+[m
+ reference_results/REFERENCE_RESULTS_README.md                              |   251 [32m+[m
+ reference_results/data/boundary_safe_rdf.csv                               |  1441 [32m++[m
+ reference_results/data/dump_inventory.csv                                  |     5 [32m+[m
+ reference_results/data/equivalence_tests.csv                               |   529 [32m+[m
+ reference_results/data/experimental_gOO_skinner_2013_full.csv              |  2001 [32m++[m
+ reference_results/data/experimental_gOO_skinner_2013_metadata.json         |    21 [32m+[m
+ reference_results/data/experimental_rdf_landmarks.csv                      |     9 [32m+[m
+ reference_results/data/gOO_experiment_comparison_metrics.csv               |     9 [32m+[m
+ reference_results/data/gOO_experiment_overlay_aligned.csv                  |   553 [32m+[m
+ reference_results/data/global_temporal_summary.csv                         |     4 [32m+[m
+ reference_results/data/global_timeseries.csv                               |   604 [32m+[m
+ reference_results/data/intermolecular_rdf_feature_metrics.csv              |    33 [32m+[m
+ reference_results/data/intermolecular_rdf_with_block_std.csv               |  1921 [32m++[m
+ reference_results/data/npbc_pbc_rdf_comparisons.csv                        |    10 [32m+[m
+ reference_results/data/pbc40_total_rdf.csv                                 |   481 [32m+[m
+ reference_results/data/potential_amplitudes_full_radius.csv                |   264 [32m+[m
+ reference_results/data/potential_extrema.csv                               |     4 [32m+[m
+ reference_results/data/potential_fields_full_radius.csv                    |  6504 [32m+++++[m
+ reference_results/data/potential_input_inventory.csv                       |     4 [32m+[m
+ reference_results/data/radial_layer_analysis_metadata.json                 |    65 [32m+[m
+ reference_results/data/radial_layer_distribution_metrics_vs_pbc.csv        |   181 [32m+[m
+ reference_results/data/radial_layer_gOO.csv                                |  8801 [32m+++++++[m
+ reference_results/data/radial_layer_gOO_metrics.csv                        |    55 [32m+[m
+ reference_results/data/radial_layer_input_inventory.csv                    |     6 [32m+[m
+ reference_results/data/radial_layer_property_distributions_vs_pbc.csv      | 16881 [32m+++++++++++++[m
+ reference_results/data/rdf_extension_input_inventory.csv                   |     6 [32m+[m
+ reference_results/data/rdf_extension_metadata.json                         |    22 [32m+[m
+ reference_results/data/rdf_peak_metrics.csv                                |    10 [32m+[m
+ reference_results/data/regional_distributions.csv                          | 43921 [32m+++++++++++++++++++++++++++++++++[m
+ reference_results/data/regional_summary.csv                                |   529 [32m+[m
+ reference_results/data/shell_profile_comparisons.csv                       |   277 [32m+[m
+ reference_results/data/shell_profiles.csv                                  |   261 [32m+[m
+ reference_results/data/system_geometry.csv                                 |     4 [32m+[m
+ reference_results/data/temporal_shell_statistics.csv                       |   261 [32m+[m
+ reference_results/data/temporal_shell_timeseries.csv.gz                    |   Bin [31m0[m -> [32m9723818[m bytes
+ reference_results/figure_manifest.csv                                      |    29 [32m+[m
+ reference_results/figures/01_full_radius_density_mean_std.pdf              |   Bin [31m0[m -> [32m25637[m bytes
+ reference_results/figures/01_full_radius_density_mean_std.png              |   Bin [31m0[m -> [32m203459[m bytes
+ reference_results/figures/02_full_radius_orientation_mean_std.pdf          |   Bin [31m0[m -> [32m35972[m bytes
+ reference_results/figures/02_full_radius_orientation_mean_std.png          |   Bin [31m0[m -> [32m313685[m bytes
+ reference_results/figures/03_full_radius_network_mean_std.pdf              |   Bin [31m0[m -> [32m48124[m bytes
+ reference_results/figures/03_full_radius_network_mean_std.png              |   Bin [31m0[m -> [32m475331[m bytes
+ .../figures/04_full_radius_intramolecular_geometry_mean_std.pdf            |   Bin [31m0[m -> [32m36887[m bytes
+ .../figures/04_full_radius_intramolecular_geometry_mean_std.png            |   Bin [31m0[m -> [32m281962[m bytes
+ reference_results/figures/05_full_radius_nearest_neighbors_mean_std.pdf    |   Bin [31m0[m -> [32m36746[m bytes
+ reference_results/figures/05_full_radius_nearest_neighbors_mean_std.png    |   Bin [31m0[m -> [32m293936[m bytes
+ reference_results/figures/06_full_radius_gaussian_amplitudes.pdf           |   Bin [31m0[m -> [32m21425[m bytes
+ reference_results/figures/06_full_radius_gaussian_amplitudes.png           |   Bin [31m0[m -> [32m116256[m bytes
+ reference_results/figures/07_normalized_radius_gaussian_amplitudes.pdf     |   Bin [31m0[m -> [32m17693[m bytes
+ reference_results/figures/07_normalized_radius_gaussian_amplitudes.png     |   Bin [31m0[m -> [32m84506[m bytes
+ reference_results/figures/08_full_radius_potential_and_force.pdf           |   Bin [31m0[m -> [32m42433[m bytes
+ reference_results/figures/08_full_radius_potential_and_force.png           |   Bin [31m0[m -> [32m278691[m bytes
+ reference_results/figures/09_wall_aligned_potential_and_force.pdf          |   Bin [31m0[m -> [32m32877[m bytes
+ reference_results/figures/09_wall_aligned_potential_and_force.png          |   Bin [31m0[m -> [32m221535[m bytes
+ reference_results/figures/10_density_fluctuation_potential_overlay.pdf     |   Bin [31m0[m -> [32m25331[m bytes
+ reference_results/figures/10_density_fluctuation_potential_overlay.png     |   Bin [31m0[m -> [32m224583[m bytes
+ reference_results/figures/11_global_temporal_fluctuations.pdf              |   Bin [31m0[m -> [32m28784[m bytes
+ reference_results/figures/11_global_temporal_fluctuations.png              |   Bin [31m0[m -> [32m294887[m bytes
+ reference_results/figures/12_full_radius_temporal_standard_deviation.pdf   |   Bin [31m0[m -> [32m31017[m bytes
+ reference_results/figures/12_full_radius_temporal_standard_deviation.png   |   Bin [31m0[m -> [32m325583[m bytes
+ reference_results/figures/13_volume_weighted_distributions.pdf             |   Bin [31m0[m -> [32m32748[m bytes
+ reference_results/figures/13_volume_weighted_distributions.png             |   Bin [31m0[m -> [32m437883[m bytes
+ reference_results/figures/14_boundary_safe_pair_correlations.pdf           |   Bin [31m0[m -> [32m21185[m bytes
+ reference_results/figures/14_boundary_safe_pair_correlations.png           |   Bin [31m0[m -> [32m148554[m bytes
+ reference_results/figures/15_equivalence_effect_size_matrix.pdf            |   Bin [31m0[m -> [32m18813[m bytes
+ reference_results/figures/15_equivalence_effect_size_matrix.png            |   Bin [31m0[m -> [32m245956[m bytes
+ reference_results/figures/16_geometric_mixing_and_equivalence.pdf          |   Bin [31m0[m -> [32m15535[m bytes
+ reference_results/figures/16_geometric_mixing_and_equivalence.png          |   Bin [31m0[m -> [32m129010[m bytes
+ reference_results/figures/17_gOO_experimental_benchmark.pdf                |   Bin [31m0[m -> [32m31171[m bytes
+ reference_results/figures/17_gOO_experimental_benchmark.png                |   Bin [31m0[m -> [32m177144[m bytes
+ reference_results/figures/18_intermolecular_gOH.pdf                        |   Bin [31m0[m -> [32m32523[m bytes
+ reference_results/figures/18_intermolecular_gOH.png                        |   Bin [31m0[m -> [32m192523[m bytes
+ reference_results/figures/19_intermolecular_gHH.pdf                        |   Bin [31m0[m -> [32m31777[m bytes
+ reference_results/figures/19_intermolecular_gHH.png                        |   Bin [31m0[m -> [32m181098[m bytes
+ reference_results/figures/20_npbc_vs_pbc_rdf.pdf                           |   Bin [31m0[m -> [32m61862[m bytes
+ reference_results/figures/20_npbc_vs_pbc_rdf.png                           |   Bin [31m0[m -> [32m594686[m bytes
+ reference_results/figures/21_full_experimental_gOO_overlay.pdf             |   Bin [31m0[m -> [32m59539[m bytes
+ reference_results/figures/21_full_experimental_gOO_overlay.png             |   Bin [31m0[m -> [32m318968[m bytes
+ reference_results/figures/22_radial_layer_gOO_vs_pbc.pdf                   |   Bin [31m0[m -> [32m68870[m bytes
+ reference_results/figures/22_radial_layer_gOO_vs_pbc.png                   |   Bin [31m0[m -> [32m456321[m bytes
+ reference_results/figures/23_radial_layer_gOO_delta_heatmap.pdf            |   Bin [31m0[m -> [32m36045[m bytes
+ reference_results/figures/23_radial_layer_gOO_delta_heatmap.png            |   Bin [31m0[m -> [32m134527[m bytes
+ reference_results/figures/24_radial_layer_gOO_metrics.pdf                  |   Bin [31m0[m -> [32m30387[m bytes
+ reference_results/figures/24_radial_layer_gOO_metrics.png                  |   Bin [31m0[m -> [32m373461[m bytes
+ reference_results/figures/25_radial_layer_network_distributions_vs_pbc.pdf |   Bin [31m0[m -> [32m55384[m bytes
+ reference_results/figures/25_radial_layer_network_distributions_vs_pbc.png |   Bin [31m0[m -> [32m404237[m bytes
+ .../figures/26_radial_layer_intramolecular_distributions_vs_pbc.pdf        |   Bin [31m0[m -> [32m53154[m bytes
+ .../figures/26_radial_layer_intramolecular_distributions_vs_pbc.png        |   Bin [31m0[m -> [32m285375[m bytes
+ .../figures/27_radial_layer_neighbor_distributions_vs_pbc.pdf              |   Bin [31m0[m -> [32m116663[m bytes
+ .../figures/27_radial_layer_neighbor_distributions_vs_pbc.png              |   Bin [31m0[m -> [32m549388[m bytes
+ reference_results/figures/28_radial_layer_distribution_js_heatmap.pdf      |   Bin [31m0[m -> [32m42865[m bytes
+ reference_results/figures/28_radial_layer_distribution_js_heatmap.png      |   Bin [31m0[m -> [32m143570[m bytes
+ reference_results/source_inputs/Ambient_water_xray_data.txt                |  2012 [32m++[m
+ reference_results/source_inputs/PBC40_extract_stationary_pbc.py            |    61 [32m+[m
+ reference_results/source_inputs/PBC40_log_pbc40_eq100ps_prod1ns.lammps     |  1301 [32m+[m
+ reference_results/source_inputs/PBC40_water_pbc40_prod_final.data          | 14317 [32m+++++++++++[m
+ reference_results/source_inputs/R15_gau_flat_edge_global159_snapshot.dat   |    63 [32m+[m
+ .../source_inputs/R15_vdw_parameter_step25000_flat_edge_m13.dat            |    89 [32m+[m
+ reference_results/source_inputs/R20_gau_R20_commonpolish_work.dat          |    83 [32m+[m
+ .../source_inputs/R20_vdw_parameter_step25000_flat_edge_m13.dat            |   134 [32m+[m
+ reference_results/source_inputs/R30_gau_flat_edge_global188_snapshot.dat   |   123 [32m+[m
+ .../source_inputs/R30_vdw_parameter_step25000_flat_edge_m13.dat            |   209 [32m+[m
+ reference_results/style_reference/STOCHKIN_COMMIT.txt                      |     7 [32m+[m
+ reference_results/style_reference/STOCHKIN_LICENSE                         |    21 [32m+[m
+ reference_results/style_reference/stochkin_style_commit_3c99adb.py         |   143 [32m+[m
+ reference_results/suite_metadata.json                                      |    74 [32m+[m
+ src/npbc_water_analysis/__init__.py                                        |     6 [32m+[m
+ src/npbc_water_analysis/__main__.py                                        |     3 [32m+[m
+ src/npbc_water_analysis/cli.py                                             |    71 [32m+[m
+ src/npbc_water_analysis/config.py                                          |   173 [32m+[m
+ src/npbc_water_analysis/geometry.py                                        |    60 [32m+[m
+ src/npbc_water_analysis/kernels.py                                         |    30 [32m+[m
+ src/npbc_water_analysis/pipeline.py                                        |   183 [32m+[m
+ src/npbc_water_analysis/potential.py                                       |    31 [32m+[m
+ src/npbc_water_analysis/reference.py                                       |    55 [32m+[m
+ src/npbc_water_analysis/statistics.py                                      |    56 [32m+[m
+ tests/test_config_pipeline.py                                              |   104 [32m+[m
+ tests/test_geometry.py                                                     |    53 [32m+[m
+ tests/test_kernel_parser.py                                                |    25 [32m+[m
+ tests/test_potential.py                                                    |    13 [32m+[m
+ tests/test_reference_results.py                                            |    14 [32m+[m
+ tests/test_statistics.py                                                   |    34 [32m+[m
+ 152 files changed, 111272 insertions(+), 4 deletions(-)

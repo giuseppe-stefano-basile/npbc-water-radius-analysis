@@ -1,0 +1,22 @@
+{
+  "method": "directed site-site RDF; same-molecule pairs excluded for OH and HH",
+  "npbc_reference_rule": "reference atom radius <= R - 8 A",
+  "pbc_rule": "40 A cubic minimum-image periodic distances",
+  "rmax_A": 8.0,
+  "bin_width_A": 0.05,
+  "sampling_interval_ps": 25.0,
+  "uncertainty_band": "first temporal standard deviation across 100 ps block RDF estimates",
+  "pbc_stationary_interval_ps": [
+    200,
+    1000
+  ],
+  "pbc_frames_available": 801,
+  "pbc_frames_sampled": 33,
+  "pbc_waters": 2383,
+  "pbc_volume_A3": 64000.0,
+  "pbc_number_density_molecule_A3": 0.037234375,
+  "npbc_target_number_density_molecule_A3": 0.037242,
+  "pbc_model": "MACE-OFF23 small_2 / MACE-OFF23_small_2.model-mliap_lammps.pt",
+  "pbc_model_sha256": "4a52f16b9b93018b50ce769581fd2b51d2d9dc2d017487c131fde201dae8f7e9",
+  "experimental_note": "Full author-supplied numerical gOO curve and error are provided separately; gOH/gHH remain published tabulated landmarks, not digitized curves"
+}

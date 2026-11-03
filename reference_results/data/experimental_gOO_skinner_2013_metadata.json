@@ -1,0 +1,21 @@
+{
+  "source": "L. B. Skinner et al., J. Chem. Phys. 138, 074506 (2013)",
+  "doi": "10.1063/1.4790861",
+  "measurement_temperature_C": 22.0,
+  "measurement_facility": "APS sector 11-ID-C",
+  "maximum_Q_inverse_A": 20.8,
+  "raw_source_file": "Ambient_water_xray_data.txt",
+  "raw_source_sha256": "0af9f7d8e1ea73817b623177b65de0305425a30f63cace33def3b138f5253960",
+  "raw_points": 2000,
+  "raw_r_range_A": [
+    0.0,
+    19.99
+  ],
+  "overlay_r_range_A": [
+    1.1,
+    7.975
+  ],
+  "overlay_interpolation": "linear interpolation of the 0.01 A experimental grid onto the 0.05 A simulation bin centers",
+  "simulation_fluctuation": "first temporal standard deviation across 100 ps block RDF estimates",
+  "comparison_note": "Experiment and simulation are not at matched number density; residual metrics are descriptive, not a formal goodness-of-fit test."
+}

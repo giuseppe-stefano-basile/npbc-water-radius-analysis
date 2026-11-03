@@ -1,0 +1,7 @@
+commit 3c99adb84f7fe5efd2a2b5e4b8ec6c094db8d067
+Author:     giuseppe-stefano-basile <giuseppe-stefano-basile@users.noreply.github.com>
+AuthorDate: Mon Mar 30 19:37:56 2026 +0200
+Commit:     giuseppe-stefano-basile <giuseppe-stefano-basile@users.noreply.github.com>
+CommitDate: Mon Mar 30 19:37:56 2026 +0200
+
+    examples: update uncertainty figure output

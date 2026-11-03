@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the associated NPBC work when using the analysis."
+title: "NPBC water radius comparison and analysis"
+type: software
+version: 1.0.0
+date-released: 2026-09-22
+authors:
+  - family-names: Basile
+    given-names: Giuseppe Stefano
+license: MIT
